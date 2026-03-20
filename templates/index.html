@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Secure File Encryption Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2><p class="title">Upload File to Encrypt:</p></h2>
+
+<br><br>
+<form action="/encrypt" method="post" enctype="multipart/form-data">
+    <div class="file-container">
+    <input type="file" name="file" required>
+    </div>
+    <button type="submit">Encrypt File</button>
+</form>
+
+<br>
+<p class="desc"><a href="/decrypt_page" class="link">Go to Decrypt Page</a></p>
+
+</body>
+</html>
