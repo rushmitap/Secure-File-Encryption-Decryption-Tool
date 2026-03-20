@@ -1,0 +1,41 @@
+body {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url('/static/1255078-top-blue-wallpapers-1920x1080-for-android.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 40px;
+    color: #ffffff
+}
+
+.file-container input[type="file"] {
+    width: 320px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.file-container1 input[type="file"] {
+    width: 320px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: hsla(229, 69%, 48%, 0.00);
+    color: white;
+    border: 2px solid white;
+}
+
+.desc { font-size: 25px; }
+.desc1 { font-size: 25px; }
+.link { color: white;
+        text-decoration: underline; }
+.link1 { color: white;
+        text-decoration: underline; }
