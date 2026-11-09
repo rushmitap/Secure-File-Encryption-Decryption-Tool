@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVault | Decryption</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div class="brand">SECURE<span>VAULT</span></div>
+
+    <div class="card">
+
+        <div class="icon">◈</div>
+
+        <div class="eyebrow">FILE DECRYPTION</div>
+
+        <h1 class="title">
+            Restore Your <span class="highlight">Files</span>
+        </h1>
+
+        <p class="desc">
+            Recover your original files by selecting an encrypted file
+            from your device.
+        </p>
+
+        <form action="/decrypt" method="post"
+              enctype="multipart/form-data" id="fileForm">
+
+            <label for="fileInput" class="upload-zone" id="uploadZone">
+
+                <div class="upload-icon">↑</div>
+
+                <div class="upload-heading">
+                    Drop your encrypted file here
+                </div>
+
+                <div class="upload-subtext">
+                    or <span>browse files</span> from your device
+                </div>
+
+                <div class="upload-format">
+                    SELECT YOUR ENCRYPTED FILE
+                </div>
+
+                <input type="file" name="file" id="fileInput" required>
+
+            </label>
+
+            <div class="file-preview" id="filePreview">
+
+                <div class="file-icon" id="fileIcon">🔒</div>
+
+                <div class="file-details">
+                    <div class="file-name" id="fileName"></div>
+                    <div class="file-meta" id="fileMeta"></div>
+                    <div class="file-status">
+                        <span class="status-dot"></span>
+                        File ready for decryption
+                    </div>
+                </div>
+
+                <button type="button" class="remove-file"
+                        id="removeFile" aria-label="Remove selected file">
+                    ×
+                </button>
+
+            </div>
+
+            <button type="submit" id="submitButton" disabled>
+                Decrypt File <span>→</span>
+            </button>
+
+        </form>
+
+        <div class="encryption-info">
+            <span>◈</span> Secure file processing
+            <span class="info-divider">|</span>
+            <span> File recovery</span>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        Need to encrypt a file?
+        <a href="/" class="link">Go to encryption →</a>
+    </div>
+
+    <div class="security-note">SECURE FILE WORKSPACE · 02</div>
+
+</div>
+
+<script src="/static/file-preview.js"></script>
+
+</body>
+</html>
